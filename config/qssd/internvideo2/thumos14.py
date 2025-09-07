@@ -122,5 +122,7 @@ loss_lamb_1 = 2e-3
 loss_lamb_2 = 5e-5
 # loss_lamb_2 = 0.0
 loss_lamb_3 = 2e-4
+loss_lamb_4 = 1e-6
+loss_lamb_5 = 1e-6
 cls_threshold = 0.25
 action_cls_num = 20
