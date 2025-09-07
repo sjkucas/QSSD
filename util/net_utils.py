@@ -143,10 +143,6 @@ class ACMLoss(nn.Module):
 
         add_loss = self.lamb1 * guide_loss + self.lamb2 * feat_loss + self.lamb3 * sparse_loss
 
-
-        # if epoch > 5:
-        #     loss = cls_loss + add_loss + loss_dcl1 + loss_dcl + 0.01 * loss_snico
-        # else: loss = cls_loss + add_loss + loss_dcl1
         loss = cls_loss + add_loss + loss_dcl1 + self.lamb4 * loss_dcl + self.lamb5 * loss_snico
         # loss = cls_loss + add_loss + loss_dcl
 
@@ -157,5 +153,6 @@ class ACMLoss(nn.Module):
         loss_dict["guide_loss"] = guide_loss.cpu().item()
         loss_dict["feat_loss"] = feat_loss.cpu().item()
         loss_dict["sparse_loss"] = sparse_loss.cpu().item()
+
 
         return loss, loss_dict
