@@ -1,6 +1,6 @@
 _base_ = ['../_base_.py']
 
-feature_folder = 'F:/TAD/data/thumos14_6b'
+feature_folder = 'data/thumos14_6b'
 name_format = '{}_spatial_feature.pt'
 gt_path = 'data/thumos14/thumos14_soft_pseudo.json'
 meta_info_path = 'data/thumos14/th14_i3d2s_act_ft_info.json'
