@@ -36,7 +36,6 @@ We provide the checkpoints [thumos14_reg](https://drive.google.com/file/d/1oirYS
 ```bash
 python main.py --weakly False --eval True
 ```
-![result](./assets/result.png)
 
 ## Training
 To train from scratch, you can execute the following code sequentially:
