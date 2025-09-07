@@ -1,7 +1,7 @@
 ![QSSD](./assets/model.png)
 
 ## Introduction
-Pytorch implementation of papaer:
+Pytorch implementation of paper:
 Action-aware Query Selection and Ambiguous Snippet Disambiguation for Weakly-supervised Temporal Action Localization
 
 The code is modified from [DiGiT](https://github.com/Dotori-HJ/DiGIT)
